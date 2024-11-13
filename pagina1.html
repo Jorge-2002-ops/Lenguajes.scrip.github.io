@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Página</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;  /* Espacio entre botones */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;  /* Color oscuro para los enlaces */
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;  /* Color de fondo cuando pasa el cursor */
+}
+
+/* Alinear los botones a la derecha */
+header nav {
+    display: flex;
+    justify-content: flex-end;  /* Alinea los botones a la derecha */
+}
+
+
+/* Contenedor general */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Título alineado a la izquierda */
+.titulo {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Imagen en la esquina derecha */
+.imagen {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 700px;
+  height: auto;
+}
+
+/* Contenedor de los párrafos */
+.parrafos {
+  display: flex;
+  gap: 20px;
+  margin-top: 350px; /* Para que los párrafos queden debajo de la imagen */
+}
+
+/* Estilo para los párrafos */
+.parrafo {
+  font-size: 15px;
+  width: 21%; /* Los párrafos ocupan el 48% del ancho del contenedor */
+  margin: 0;
+}
+
+hr {
+            border: 2px solid #808080; /* Gris */
+            margin: 5px 0;
+        }
+
+/* Estilo para el contenido principal */
+.content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.content p {
+    max-width: 30%;
+}
+
+.content img {
+    max-width: 300px;
+    height: auto;
+}
+
+.franja-centro {
+  width: 100%;
+  height: 80px; /* Altura de la línea (tipo footer) */
+  background-color: orange; /* Color de la franja */
+  top: 50%; /* Ubicada en el centro vertical de la página */
+  left: 0;
+  transform: translateY(-50%); /* Ajusta la franja para centrarla completamente */
+  margin-top: 50px;
+  margin-bottom: 3px;
+}
+
+.container-2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Estilo para cada imagen */
+        .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 300px;  /* Tamaño de la imagen */
+            height: 300px; /* Tamaño de la imagen */
+            object-fit: cover; /* Ajuste de la imagen */
+        }
+
+        /* Estilo para el texto debajo de la imagen */
+        .image-box p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .container-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.left {
+    font-size: 14px;
+}
+
+.right {
+    text-align: right;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-item {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.big-number {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.small-text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Estilo para la línea divisoria */
+.divider {
+    width: 50%;  /* La línea divisoria abarca solo la mitad derecha de la página */
+    border: none;
+    border-top: 2px solid #CECECE;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Segunda sección */
+.second-section {
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container-4 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* O la altura que necesites */
+}
+
+/* Estilo para la imagen */
+.imagen2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+/* Estilo para el contenedor del texto */
+.texto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+/* Estilo para cada columna de palabras */
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las palabras */
+    text-align: right;
+}
+
+.columna p {
+    font-size: 12px; /* Ajusta el tamaño de la fuente */
+    line-height: 1;
+}
+
+
+</style>
+<body>
+<!-- Header -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="pagina1.html">COMPANY</a></li>
+            <li><a href="pagina2.html">JOURNALISM</a></li>
+            <li><a href="pagina3.html">CAREERS</a></li>
+            <li><a href="pagina4.html">INVESTORS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contenedor">
+    <!-- Título alineado a la izquierda -->
+    <h1 class="titulo">Mission and Values</h1>
+    
+    <!-- Imagen en la esquina derecha -->
+    <img src="Imagen 6.jpg" alt="Imagen" class="imagen">
+
+    <!-- Párrafos debajo de la imagen -->
+    <div class="parrafos">
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  <p class="parrafo">Our mission is simple: We seek the truth and help people understand the world. This mission is rooted in our belief that great journalism has the power to make each reader's life richer and more fulfilling, and all of society stronger and more just.</p>
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p class="parrafo">At The Times, our mission and values guide the work we do every day. By acting in their spirit, we serve readers and society, ensure the continued strength of our journalism and business, and foster a healthy and vibrant Times culture.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="contenedor">
+    <!-- Título alineado a la izquierda -->
+    <h1 class="titulo">Our People</h1>
+
+    <div class="content">
+        <p>The Times attracts talented and passionate people who produce and support the distribution of the world's best news report — one that is unrivaled in its ambition, breadth and independence. All of us at the company — whether we gather news, explain why our journalism is worth paying for, defend our First Amendment rights or participate in the awe-inspiring ballet of printing and delivering the newspaper to a million doorsteps — know that the integrity of our journalism comes first.</p>
+        <img src="Imagen 5.jpg" alt="Imagen de ejemplo">
+    </div>
+  </div> 
+
+  <div class="franja-centro"></div>
+
+  <hr>
+  
+  <div class="contenedor">
+    <!-- Título alineado a la izquierda -->
+    <h1 class="titulo">Explore our Company</h1>
+
+    <div class="container-2">
+        <div class="image-box">
+            <img src="Imagen 4.jpg" alt="Imagen 1">
+            <p>History</p>
+        </div>
+        <div class="image-box">
+            <img src="Imagen 3.jpg" alt="Imagen 2">
+            <p>Awards and Recognition</p>
+        </div>
+        <div class="image-box">
+            <img src="Imagen 2.jpg" alt="Imagen 3">
+            <p>Diversity and Inclusion</p>
+        </div>
+        <div class="image-box">
+            <img src="Imagen 1.jpg" alt="Imagen 4">
+            <p>Standards and Ethics</p>
+        </div>
+    </div>
+  
+    <hr>
+
+    <div class="container-3">
+        <!-- Palabra pequeña en negritas a la izquierda -->
+        <div class="left">
+            <p><strong>By the Numbers</strong></p>
+        </div>
+    
+        <!-- Cifras grandes a la derecha (primer grupo) -->
+        <div class="right">
+            <div class="numbers">
+                <div class="number-item">
+                    <p class="big-number">1,700</p>
+                    <p class="small-text">journalism  on staff</p>
+                </div>
+                <div class="number-item">
+                    <p class="big-number">55</p>
+                    <p class="small-text">Languages spoken by staff</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Línea divisoria -->
+    <hr class="divider">
+    
+    <!-- Segunda sección con otras dos cifras en fila -->
+    <div class="container-3 second-section">
+        <div class="right">
+            <div class="numbers">
+                <div class="number-item">
+                    <p class="big-number">150 mil</p>
+                    <p class="small-text">Monthly global readers</p>
+                </div>
+                <div class="number-item">
+                    <p class="big-number">6.5 mil</p>
+                    <p class="small-text">Total subscription as of Q2 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-4">
+        <!-- Imagen en la esquina superior izquierda -->
+        <img src="Imagen 7.jpg" alt="Imagen" class="imagen2">
+
+        <!-- Texto en la esquina superior derecha (dos columnas) -->
+        <div class="texto">
+            <div class="columna">
+                <strong><p>Company&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></strong>
+                <p>Pople&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Diversity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>History&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Awards and Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Social Resposability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Journalism&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Expirience&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <strong><p>Careers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></strong>
+                <p>Newsroom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Technology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Product and Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>           
+            <div class="columna">
+                <p>Investors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Collaborate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Press&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Calendar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>California Notice&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+        </div>
+    
+        
+
+</body>
+</html>

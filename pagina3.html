@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;  /* Espacio entre botones */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;  /* Color oscuro para los enlaces */
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;  /* Color de fondo cuando pasa el cursor */
+}
+
+/* Alinear los botones a la derecha */
+header nav {
+    display: flex;
+    justify-content: flex-end;  /* Alinea los botones a la derecha */
+}
+
+.segundo-header {
+    background-color: #f0f0f0; /* Gris claro */
+    padding: 20px 0;
+    text-align: left;
+}
+
+.contenido-header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Estilo para el texto debajo del segundo header */
+.texto-bajo {
+    background-color: #fafafa; /* Fondo ligeramente más claro */
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+hr {
+            border: 2px solid #808080; /* Gris */
+            margin: 15px 0;
+        }
+
+        .contenedor {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Título alineado a la izquierda */
+.titulo2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+/* Título alineado a la izquierda */
+.titulo3 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 550px;
+  margin-top: 1px;
+}
+
+/* Imagen en la esquina derecha */
+.imagen {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 700px;
+  height: auto;
+  margin-top: 200px;
+}
+
+/* Contenedor de los párrafos */
+.parrafos {
+  display: flex;
+  gap: 20px;
+  margin-top: 350px; /* Para que los párrafos queden debajo de la imagen */
+}
+
+/* Estilo para los párrafos */
+.parrafo {
+  font-size: 15px;
+  width: 21%; /* Los párrafos ocupan el 48% del ancho del contenedor */
+  margin: 0;
+}
+
+.container-2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Estilo para cada imagen */
+        .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 300px;  /* Tamaño de la imagen */
+            height: 300px; /* Tamaño de la imagen */
+            object-fit: cover; /* Ajuste de la imagen */
+        }
+
+        /* Estilo para el texto debajo de la imagen */
+        .image-box p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .container-3 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Estilo para cada imagen */
+        .image-box {
+            text-align: center;
+        }
+
+        .image2-box img {
+            width: 400px;  /* Tamaño de la imagen */
+            height: 400px; /* Tamaño de la imagen */
+            object-fit: cover; /* Ajuste de la imagen */
+        }
+
+        /* Estilo para el texto debajo de la imagen */
+        .image-box p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .container-4 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* O la altura que necesites */
+}
+
+/* Estilo para la imagen */
+.imagen3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+/* Estilo para el contenedor del texto */
+.texto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+/* Estilo para cada columna de palabras */
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre las palabras */
+    text-align: right;
+}
+
+.columna p {
+    font-size: 12px; /* Ajusta el tamaño de la fuente */
+    line-height: 1;
+}
+
+
+
+</style>
+<body>
+    <!-- Header -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="pagina1.html">COMPANY</a></li>
+            <li><a href="pagina2.html">JOURNALISM</a></li>
+            <li><a href="pagina3.html">CAREERS</a></li>
+            <li><a href="pagina4.html">INVESTORS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<header class="segundo-header">
+    <div class="contenido-header">
+        <h2 class="titulo">Careers</h2>
+    </div>
+</header>
+
+    <p>Independent, deeply reported journalism is the fuel that powers a healthy and engaged society. We are</p>
+    <p>covering the most important topics of our time and telling stories that would otherwise go untold.</p>
+
+    <hr>
+
+    <div class="contenedor">
+        <!-- Título alineado a la izquierda -->
+        <h1 class="titulo2">Help Shape of The</h1>
+        <h1 class="titulo3">New York Times</h1>
+        
+        <!-- Imagen en la esquina derecha -->
+        <img src="Imagen 13.jpg" alt="Imagen" class="imagen">
+    </div>
+
+    <hr>
+
+    <div class="contenedor">
+        <!-- Título alineado a la izquierda -->
+        <h2 class="titulo4">Explore our Company</h2>
+    
+        <div class="container-2">
+            <div class="image-box">
+                <img src="Imagen 14.jpg" alt="Imagen 1">
+                <p>Newsroom</p>
+            </div>
+            <div class="image-box">
+                <img src="Imgen 15.5.jpg" alt="Imagen 2">
+                <p>Technology</p>
+            </div>
+            <div class="image-box">
+                <img src="Imagen 15.jpg" alt="Imagen 3">
+                <p>Product and Design</p>
+            </div>
+            <div class="image-box">
+                <img src="Imagen 16.jpg" alt="Imagen 4">
+                <p>Data and Insights Group</p>
+            </div>
+        </div> 
+        
+        <hr>
+
+<div class="container-3">
+    <div class="image2-box">
+        <img src="Imagen 17.jpg" alt="Imagen 1">
+        <p>Newsroom</p>
+    </div>
+    <div class="image2-box">
+        <img src="Imagen 18.jpg" alt="Imagen 2">
+        <p>History</p>
+    </div>
+    <div class="image2-box">
+        <img src="Imagen10.jpg" alt="Imagen 3">
+        <p>Company</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="container-4">
+    <!-- Imagen en la esquina superior izquierda -->
+    <img src="Imagen 7.jpg" alt="Imagen" class="imagen3">
+
+    <!-- Texto en la esquina superior derecha (dos columnas) -->
+    <div class="texto">
+        <div class="columna">
+            <strong><p>Company&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></strong>
+            <p>Pople&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Diversity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>History&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Awards and Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Social Resposability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Journalism&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Expirience&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <strong><p>Careers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></strong>
+            <p>Newsroom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Technology&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Product and Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Marketing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>           
+        <div class="columna">
+            <p>Investors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Collaborate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Press&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Calendar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Terms of Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>California Notice&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+</body>
+</html>
